@@ -45,7 +45,7 @@ export function AccountMenu({ name, ...props }: AccountMenuProps): JSX.Element {
   const closeMenu = () => setOpen(false);
 
   const accountName = name ? `${name}'s` : "Your";
-  const isMainnet = (chain?: string) => chain === "juno-1";
+  const isMainnet = (chain?: string) => chain === "Ki-chain-2";
 
   return (
     <>

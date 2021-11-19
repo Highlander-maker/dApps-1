@@ -10,9 +10,10 @@ export const GlobalColors = createGlobalStyle`
     --color-blue-light: #1890ff;
     --color-coral: #f0827dff;
     --color-coral-light: #f16a64;
+    --color-ki: #4eedf7
 
-    --color-primary: var(--color-coral);
-    --button-color: var(--color-coral-light);
+    --color-primary: var(--color-#333);
+    --button-color: var(--color-ki);
     --text-color: var(--color-primary);
     --heading-color: var(--color-primary);
     --form-error: var(--color-red);

@@ -8,8 +8,9 @@ import {
   useError,
   useSdk,
   WalletLoader,
-} from "@cosmicdapp/logic";
-import { GlobalOutlined, UsbOutlined } from "@ant-design/icons";
+}//@ts-ignore 
+from "@cosmicdapp/logic";
+import { GlobalOutlined, AimOutlined } from "@ant-design/icons";
 import { Avatar, Button, Typography } from "antd";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -99,7 +100,7 @@ export function Login({ config, pathAfterLogin, appName, appLogo, ...restProps }
         <WelcomeStack>
           <Typography>
             <Title level={2}>Hello!</Title>
-            <LightText>Welcome to your {appName}</LightText>
+            <LightText>Welcome to {appName}</LightText>
             <LightText>Select one of the following options to start:</LightText>
           </Typography>
           {error && <ErrorText>{error}</ErrorText>}
@@ -107,14 +108,14 @@ export function Login({ config, pathAfterLogin, appName, appLogo, ...restProps }
             Browser (Demo)
           </Button>
           <Button type="primary" disabled={disableLedgerLogin()} onClick={initLedger}>
-            <UsbOutlined /> Ledger (Secure, Chrome)
+            <AimOutlined /> Ledger (Secure, Chrome)
           </Button>
           <Button type="primary" disabled={disableKeplrLogin()} onClick={initKeplr}>
             <GlobalOutlined /> Keplr (Secure)
           </Button>
         </WelcomeStack>
         <CenterBox>
-          <Avatar src="https://avatars.githubusercontent.com/u/71741453?s=200&v=4" /> by Disperze
+          <Avatar src="/Volumes/External/Workspace/github/dApps-1/packages/native-staking/src/App/components/AccountMenu/assets/avatar.svg" /> by Highlander Nodes & qf3i3k
         </CenterBox>
       </MainStack>
     </PageLayout>
