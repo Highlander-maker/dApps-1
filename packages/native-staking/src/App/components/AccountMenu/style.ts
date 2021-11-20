@@ -21,12 +21,12 @@ export const MenuCenter = styled(Center)`
 
   min-width: var(--max-width);
   padding: var(--s0);
-  background-color: var(--color-primary);
+  background-color: var(--color-ki);
 `;
 
 export const MenuStack = styled(Stack)`
   width: 100%;
-  color: var(--color-gray-light);
+  color: var(--color-black);
 
   & > * {
     --gap: var(--s4);
@@ -63,7 +63,7 @@ export const AddressCopyBox = styled.div`
   width: 100%;
   padding: var(--s-4) 0;
   border-radius: 2px;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-black);
 
   display: flex;
   align-items: center;

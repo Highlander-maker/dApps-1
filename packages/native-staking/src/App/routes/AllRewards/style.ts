@@ -66,7 +66,7 @@ export const BorderContainer = styled.div`
     }
   }
 
-  border-top: var(--border-size) solid var(--color-primary);
+  border-top: var(--border-size) solid var(--color-ki);
   padding-top: var(--v-padding);
   margin-top: calc(-1 * var(--v-padding));
 `;

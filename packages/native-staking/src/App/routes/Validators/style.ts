@@ -51,10 +51,10 @@ export const BorderContainer = styled.div`
   &:hover,
   &:active,
   &:focus {
-    background-color: var(--color-primary);
+    background-color: var(--color-ki);
 
     & * {
-      color: white;
+      color: black;
     }
   }
 
@@ -79,6 +79,11 @@ export const BorderContainer = styled.div`
   }
 
   border-top: var(--border-size) solid var(--color-primary);
+  & * {
+    color: white;
+  }
   padding-top: var(--v-padding);
   margin-top: calc(-1 * var(--v-padding));
+
+  
 `;

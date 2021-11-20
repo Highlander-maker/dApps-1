@@ -22,7 +22,7 @@ export const LightText = styled(Text)`
 `;
 
 export const ErrorText = styled(Text)`
-  color: var(--color-red);
+  color: var(--color-ki);
 `;
 
 export const CenterBox = styled.div`

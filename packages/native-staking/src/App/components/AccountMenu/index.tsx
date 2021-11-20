@@ -51,7 +51,7 @@ export function AccountMenu({ name, ...props }: AccountMenuProps): JSX.Element {
     <>
       <Badge
         count={isMainnet(config.chainId) ? "mainnet": config.chainId}
-        style={{ backgroundColor: 'var(--color-primary)', marginTop: "8px" }}
+        style={{ backgroundColor: 'var(--color-black)', marginTop: "8px" }}
       />
       <OpenMenuButton src={openMenuButton} alt="Open account menu" onClick={openMenu} {...props} />
       {open && (
@@ -63,7 +63,7 @@ export function AccountMenu({ name, ...props }: AccountMenuProps): JSX.Element {
                 <img src={avatarIcon} alt="Avatar" />
                 <NameText>{accountName} account</NameText>
               </AvatarName>
-              <Text style={{color: "black"}}>({printableBalance(balance)})</Text>
+              <Text style={{color: "white"}}>({printableBalance(balance)})</Text>
               <AddressCopyBox>
                 <AddressText>{address}</AddressText>
                 <AddressCopy
