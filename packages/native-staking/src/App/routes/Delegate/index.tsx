@@ -75,13 +75,13 @@ export function Delegate(): JSX.Element {
             <Title>Delegate</Title>
             <Title level={2}>{validator?.description.moniker ?? ""}</Title>
           </HeaderTitleStack>
-          <Alert
+          {/* <Alert
             style={{marginTop: "10px"}}
             message="Unbonding time: 28 days"
             description="You will need to undelegate in order for your staked assets to be liquid again. This process will take 28 days to complete."
             type="error"
             closable
-          />
+          /> */}
           <FormDelegateBalance submitDelegateBalance={submitDelegateBalance} />
         </MainStack>
       </PageLayout>
